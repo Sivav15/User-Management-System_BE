@@ -21,12 +21,15 @@ const userSchema = new mongoose.Schema(
     phoneNumber: {
       type: String,
       required: true,
-      unique: true,
+      // unique: true,
     },
     profession: {
       type: String,
       required: true,
       trim: true,
+    },
+    avatar: {
+      type: String,
     },
   },
   { timestamps: true }
